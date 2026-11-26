@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "sirlero-catalog",
+  "description": "Search and cite Sirlero public pages with the search-sirlero skill.",
+  "version": "1.0.0",
+  "homepage": "https://sirlero.com/docs/",
+  "repository": "https://github.com/sirleroHQ/sirlero-integrations",
+  "author": {
+    "name": "Sirlero"
+  }
+}
