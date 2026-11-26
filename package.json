@@ -1,0 +1,12 @@
+{
+  "name": "sirlero-catalog",
+  "version": "1.0.0",
+  "description": "Sirlero public catalog search SDK and CLI for Node.js",
+  "homepage": "https://sirlero.com/docs/catalog-client/",
+  "repository": {"type": "git", "url": "git+https://github.com/sirleroHQ/sirlero-integrations.git"},
+  "type": "module",
+  "exports": "./index.mjs",
+  "bin": {"sirlero": "./bin/sirlero.mjs"},
+  "files": ["index.mjs", "bin/sirlero.mjs"],
+  "engines": {"node": ">=20"}
+}
