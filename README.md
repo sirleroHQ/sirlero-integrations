@@ -13,3 +13,18 @@ Read the [search-sirlero skill](skills/search-sirlero/SKILL.md). Install it with
 ## MCP
 
 Connect a Streamable HTTP client to `https://sirlero.com/mcp`. Use `search_sirlero` to locate pages and `read_sirlero_page` to retrieve their Markdown. Cite the canonical URL from each search result.
+
+## JavaScript SDK
+
+Install from the official repository with `npm install github:sirleroHQ/sirlero-integrations` using Node.js 20 or later. To search from the terminal, run `npx --no-install sirlero FinOps` after installation.
+
+```js
+import {searchCatalog} from "sirlero-catalog";
+
+const page = await searchCatalog("FinOps");
+console.log(page.results);
+if (page.next_cursor) {
+  const nextPage = await searchCatalog("FinOps", {cursor: page.next_cursor});
+  console.log(nextPage.results);
+}
+```
